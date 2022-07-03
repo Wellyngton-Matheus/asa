@@ -1,14 +1,9 @@
 
-FROM debian:latest
+FROM ubuntu/bind9
 
 # update, e instalação do bind9, alem de outros utilitarios de DNS 
 RUN apt-get update \
   && apt-get install -y \
-  bind9 \
-  bind9utils \
-  bind9-doc \
-  inetutils-ping \
-  iputils-ping \
   nano \
   dnsutils 
 
