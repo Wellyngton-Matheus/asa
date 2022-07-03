@@ -11,7 +11,7 @@ RUN apt-get update \
 # Copiando arquivos de configurações para o container
 COPY named.conf.options /etc/bind/
 COPY named.conf.local /etc/bind/
-COPY forward.labredes.teste /etc/bind/zones/
+COPY db.asa /etc/bind/zones/
 
 # Executação infinita 
 CMD ["/bin/bash", "-c", "while :; do sleep 10; done"]

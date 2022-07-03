@@ -9,11 +9,11 @@
 //	type master;
 //	file "/etc/bind/db.asa1.com";
 //};
-zone "labredes.teste" {
+zone "asa.labredes.br" {
 type master;
-file "/etc/bind/forward.labredes.teste";
+file "/etc/bind/db.asa";
 };
 zone "0.168.192.in-addr.arpa" {
 type master;
-file "/etc/bind/reverse.labredes.teste";
+file "/etc/bind/reverse.asa.br";
 };
