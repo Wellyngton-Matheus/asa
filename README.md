@@ -11,12 +11,12 @@
 
 Seguir os passos abaixo para fazer o download e configurar o DNS.
 
-```git clone https://github.com/Wellyngton-Matheus/asa.git```
+    git clone https://github.com/Wellyngton-Matheus/asa.git
 
-```cd asa/```
+    cd asa/
 
-```docker build -t bind9 .```
+    ocker build -t bind9 .
 
-```docker run -p 0.0.0.0:53:53/ udp -p 0.0.0.0:53:53/tcp bind9```
+    docker run -p 0.0.0.0:53:53/ udp -p 0.0.0.0:53:53/tcp bind9
 
 **Obs:** Antes de executar o "docker build" deve-se alterar o IP para o da sua máquina no arquivo db.asa
