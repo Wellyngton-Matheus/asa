@@ -2,7 +2,7 @@
 ; BIND data file for local loopback interface
 ;
 $TTL	604800
-@	IN	SOA	asa.labredes.br. x.labredes.teste. (
+@	IN	SOA	asa.labredes.br. root.asa.labredes.teste. (
 			      2		; Serial
 			 604800		; Refresh
 			  86400		; Retry
@@ -10,6 +10,8 @@ $TTL	604800
 			 604800 )	; Negative Cache TTL
 ;
 @	IN	NS	asa.labredes.br.
+@	IN	NS	asa1.labredes.br.
+
 asa	IN	A	192.168.0.10 ; apontamento de dominio para ipv4
 
 
