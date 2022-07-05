@@ -15,7 +15,7 @@ Seguir os passos abaixo para fazer o download e configurar o DNS.
 
     cd asa/
 
-    ocker build -t bind9 .
+    docker build -t bind9 .
 
     docker run -p 0.0.0.0:53:53/ udp -p 0.0.0.0:53:53/tcp bind9
 
